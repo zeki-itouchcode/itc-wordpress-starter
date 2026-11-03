@@ -14,7 +14,7 @@
 /public/content/upgrade/
 /public/.htaccess
 /vendor/
-/node_modules/
+node_modules/
 .turbo/
 .env
 .env.*
