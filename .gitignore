@@ -1,34 +1,27 @@
-# Application
-web/app/plugins/*
-!web/app/plugins/.gitkeep
-# Ignore Composer-installed mu-plugin directories; single-file mu-plugins are tracked intentionally
-web/app/mu-plugins/*/
-web/app/themes/twentytwentyfive/
-web/app/upgrade
-web/app/uploads/*
-!web/app/uploads/.gitkeep
-web/app/cache/*
+# Legacy Bedrock install from the original starter is not part of this project.
+/web/
 
-# WordPress
-web/wp
-web/.htaccess
-
-# Logs
-*.log
-
-# Dotenv
+# Installed application and persistent data
+/public/wp/
+/public/content/plugins/*
+!/public/content/plugins/.gitkeep
+/public/content/themes/*
+!/public/content/themes/.gitkeep
+/public/content/mu-plugins/*/
+/public/content/uploads/*
+!/public/content/uploads/.gitkeep
+/public/content/cache/
+/public/content/upgrade/
+/public/.htaccess
+/vendor/
+/node_modules/
+.turbo/
 .env
 .env.*
 !.env.example
-
-# Composer
-/vendor
 auth.json
-
-# PHPUnit/Pest
+*.log
 phpunit.xml
 .phpunit.result.cache
-.phpunit.cache
-
-# WP-CLI
+.phpunit.cache/
 wp-cli.local.yml

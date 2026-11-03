@@ -10,21 +10,42 @@
   ],
   "repositories": [
     {
+      "type": "path",
+      "url": "packages/themes/*",
+      "options": {
+        "symlink": true
+      }
+    },
+    {
+      "type": "path",
+      "url": "packages/plugins/*",
+      "options": {
+        "symlink": true
+      }
+    },
+    {
+      "type": "path",
+      "url": "packages/mu-plugins/*",
+      "options": {
+        "symlink": true
+      }
+    },
+    {
       "name": "wp-packages",
       "type": "composer",
       "url": "https://repo.wp-packages.org"
     }
   ],
   "require": {
-    "php": ">=8.3",
     "composer/installers": "^2.0",
+    "itouchcode/itc-starter-theme": "^1.0",
     "oscarotero/env": "^2.0",
+    "php": ">=8.3",
     "roots/bedrock-autoloader": "^1.0",
     "roots/bedrock-disallow-indexing": "^2.0",
     "roots/wordpress": "7.1.4",
     "roots/wp-config": "^1.0",
-    "vlucas/phpdotenv": "^5.0",
-    "wp-theme/twentytwentyfive": "^1.0"
+    "vlucas/phpdotenv": "^5.0"
   },
   "require-dev": {
     "laravel/pint": "^1.0",
@@ -44,17 +65,17 @@
   "prefer-stable": true,
   "extra": {
     "installer-paths": {
-      "web/app/mu-plugins/{$name}/": [
+      "public/content/mu-plugins/{$name}/": [
         "type:wordpress-muplugin"
       ],
-      "web/app/plugins/{$name}/": [
+      "public/content/plugins/{$name}/": [
         "type:wordpress-plugin"
       ],
-      "web/app/themes/{$name}/": [
+      "public/content/themes/{$name}/": [
         "type:wordpress-theme"
       ]
     },
-    "wordpress-install-dir": "web/wp"
+    "wordpress-install-dir": "public/wp"
   },
   "scripts": {
     "lint": "pint --test",

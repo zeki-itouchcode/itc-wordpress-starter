@@ -1,0 +1,7 @@
+{
+  "name": "itouchcode/itc-starter-theme",
+  "description": "A minimal editable WordPress block theme for ITC projects.",
+  "type": "wordpress-theme",
+  "version": "1.0.0",
+  "license": "MIT"
+}

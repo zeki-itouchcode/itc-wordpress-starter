@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d16956f1bc24a97bb64af930a1e4fb7f",
+    "content-hash": "c26dc821395703180fd99d152c08a749",
     "packages": [
         {
             "name": "composer/installers",
@@ -213,6 +213,24 @@
                 }
             ],
             "time": "2026-08-24T09:06:52+00:00"
+        },
+        {
+            "name": "itouchcode/itc-starter-theme",
+            "version": "1.0.0",
+            "dist": {
+                "type": "path",
+                "url": "packages/themes/itc-starter-theme",
+                "reference": "8259e242db3a09859fd71629423aeb4136102171"
+            },
+            "type": "wordpress-theme",
+            "license": [
+                "MIT"
+            ],
+            "description": "A minimal editable WordPress block theme for ITC projects.",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
         },
         {
             "name": "oscarotero/env",
@@ -1040,32 +1058,6 @@
                 }
             ],
             "time": "2026-10-25T16:26:19+00:00"
-        },
-        {
-            "name": "wp-theme/twentytwentyfive",
-            "version": "1.5",
-            "source": {
-                "type": "svn",
-                "url": "https://themes.svn.wordpress.org/twentytwentyfive/",
-                "reference": "1.5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/theme/twentytwentyfive.1.5.zip"
-            },
-            "require": {
-                "composer/installers": "~1.0|~2.0"
-            },
-            "type": "wordpress-theme",
-            "notification-url": "https://wp-packages.org/downloads",
-            "description": "Twenty Twenty-Five emphasizes simplicity and adaptability. It offers flexible design options, supported by a variety of patterns for different page types, such as services and landing pages, making it ideal for building personal blogs, professional portfolios, online magazines, or business websites. Its templates cater to various blog styles, from text-focused to image-heavy layouts. Additionally, it supports international typography and diverse color palettes, ensuring accessibility and customization for users worldwide.",
-            "homepage": "https://wordpress.org/themes/twentytwentyfive/",
-            "support": {
-                "changelog": "https://wordpress.org/themes/twentytwentyfive/#developers",
-                "issues": "https://wordpress.org/support/theme/twentytwentyfive",
-                "source": "https://themes.svn.wordpress.org/twentytwentyfive"
-            },
-            "time": "2026-09-29T13:03:58+00:00"
         }
     ],
     "packages-dev": [

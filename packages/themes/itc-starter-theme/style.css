@@ -1,0 +1,14 @@
+/*
+Theme Name: ITC Starter Theme
+Description: A minimal block theme for custom, editable WordPress websites.
+Version: 1.0.0
+Requires at least: 6.8
+Requires PHP: 8.3
+Text Domain: itc-starter-theme
+License: MIT
+*/
+html { scroll-behavior: smooth; }
+body { margin: 0; }
+:where(a):focus-visible { outline: 3px solid currentColor; outline-offset: 4px; }
+.wp-block-navigation__responsive-container.is-menu-open { padding: 1.5rem; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
