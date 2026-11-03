@@ -25,3 +25,6 @@ phpunit.xml
 .phpunit.result.cache
 .phpunit.cache/
 wp-cli.local.yml
+
+# Generated workspace assets
+/packages/*/*/build/

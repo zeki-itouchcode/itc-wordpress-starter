@@ -1,0 +1,23 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+}
+
+:where(a):focus-visible {
+	outline: 3px solid currentcolor;
+	outline-offset: 4px;
+}
+
+.wp-block-navigation__responsive-container.is-menu-open {
+	padding: 1.5rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+	html {
+		scroll-behavior: auto;
+	}
+}

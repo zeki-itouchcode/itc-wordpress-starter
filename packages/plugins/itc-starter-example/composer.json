@@ -1,0 +1,7 @@
+{
+  "name": "itouchcode/starter-example-plugin",
+  "description": "Optional example showing a plugin asset build.",
+  "type": "wordpress-plugin",
+  "version": "1.0.0",
+  "license": "MIT"
+}
